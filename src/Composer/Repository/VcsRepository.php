@@ -142,7 +142,7 @@ class VcsRepository extends ArrayRepository implements ConfigurableRepositoryInt
             if ($verbose) {
                 $this->io->writeError($msg);
             } else {
-                $this->io->overwriteError($msg, false);
+                #$this->io->overwriteError($msg, false);
             }
 
             // strip the release- prefix from tags if present
@@ -206,7 +206,7 @@ class VcsRepository extends ArrayRepository implements ConfigurableRepositoryInt
             if ($verbose) {
                 $this->io->writeError($msg);
             } else {
-                $this->io->overwriteError($msg, false);
+                #$this->io->overwriteError($msg, false);
             }
 
             if (!$parsedBranch = $this->validateBranch($branch)) {
